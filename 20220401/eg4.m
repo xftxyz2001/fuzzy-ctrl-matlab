@@ -1,0 +1,14 @@
+clc;
+close all;
+tic;
+x = 1: 5;
+A = -0.11 * x .^ 2 + 0.66 * x - 0.01;
+xmin = min(x);
+xmax = max(x);
+ymin = min(A);
+ymax = max(A);
+figure;
+stem(x, A);
+axis([xmin - 0.2, xmax + 0.2, ymin - 0.2, ymax + 0.2]);
+box off;
+toc;
